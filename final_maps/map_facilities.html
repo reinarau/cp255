@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_dd832a63344044fb8ceb0d65886832d4 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_dd832a63344044fb8ceb0d65886832d4" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_dd832a63344044fb8ceb0d65886832d4 = L.map(
+                                  'map_dd832a63344044fb8ceb0d65886832d4',
+                                  {center: [37.962578,-122.201494],
+                                  zoom: 11,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_a2d9a99b38ee4bc9b9f7581f79383453 = L.tileLayer(
+                'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_dd832a63344044fb8ceb0d65886832d4);
+        
+    
+
+            var marker_1ec0883392f0433eb9656c3a2a2df3ac = L.marker(
+                [37.9324021,-122.3903345],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_dd832a63344044fb8ceb0d65886832d4);
+            
+    
+
+                var icon_541ea7b9e1ed431a8d6bef52d3785694 = L.AwesomeMarkers.icon({
+                    icon: 'fa-industry',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1ec0883392f0433eb9656c3a2a2df3ac.setIcon(icon_541ea7b9e1ed431a8d6bef52d3785694);
+            
+    
+            var popup_28348b00dfeb45a4a02971398bb53e18 = L.popup({maxWidth: '300'});
+
+            
+                var html_33708f2f292344d3aa41695c0238ed11 = $('<div id="html_33708f2f292344d3aa41695c0238ed11" style="width: 100.0%; height: 100.0%;">Chevron Refinery</div>')[0];
+                popup_28348b00dfeb45a4a02971398bb53e18.setContent(html_33708f2f292344d3aa41695c0238ed11);
+            
+
+            marker_1ec0883392f0433eb9656c3a2a2df3ac.bindPopup(popup_28348b00dfeb45a4a02971398bb53e18);
+
+            
+        
+    
+
+            var marker_39f11696578b41959e1c35c9c96addda = L.marker(
+                [37.9147695,-122.3692031],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_dd832a63344044fb8ceb0d65886832d4);
+            
+    
+
+                var icon_526febd82f204b13a70a3964cb883c03 = L.AwesomeMarkers.icon({
+                    icon: 'fa-industry',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_39f11696578b41959e1c35c9c96addda.setIcon(icon_526febd82f204b13a70a3964cb883c03);
+            
+    
+            var popup_fcdb2e9b5ba4442496d000d692960c57 = L.popup({maxWidth: '300'});
+
+            
+                var html_fd6a677924034f3a9f01f64155ad5797 = $('<div id="html_fd6a677924034f3a9f01f64155ad5797" style="width: 100.0%; height: 100.0%;">P-66 Richmond</div>')[0];
+                popup_fcdb2e9b5ba4442496d000d692960c57.setContent(html_fd6a677924034f3a9f01f64155ad5797);
+            
+
+            marker_39f11696578b41959e1c35c9c96addda.bindPopup(popup_fcdb2e9b5ba4442496d000d692960c57);
+
+            
+        
+    
+
+            var marker_3050145b1a504ab08f74b3c866506582 = L.marker(
+                [37.9334492,-122.3829768],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_dd832a63344044fb8ceb0d65886832d4);
+            
+    
+
+                var icon_f4f5e739512443a5b5f34c33e843bd5d = L.AwesomeMarkers.icon({
+                    icon: 'fa-industry',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3050145b1a504ab08f74b3c866506582.setIcon(icon_f4f5e739512443a5b5f34c33e843bd5d);
+            
+    
+            var popup_92b8d8bab9aa46fe96f1e6b534c2b215 = L.popup({maxWidth: '300'});
+
+            
+                var html_472f025b925c413c8074ae7b8729cd6f = $('<div id="html_472f025b925c413c8074ae7b8729cd6f" style="width: 100.0%; height: 100.0%;">Chevron Marketing Terminal</div>')[0];
+                popup_92b8d8bab9aa46fe96f1e6b534c2b215.setContent(html_472f025b925c413c8074ae7b8729cd6f);
+            
+
+            marker_3050145b1a504ab08f74b3c866506582.bindPopup(popup_92b8d8bab9aa46fe96f1e6b534c2b215);
+
+            
+        
+    
+
+            var marker_ae4b9a2cf3974ef08334ede32824564f = L.marker(
+                [38.033363,-122.071907],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_dd832a63344044fb8ceb0d65886832d4);
+            
+    
+
+                var icon_977c8718047d4b73ba3e6566c8ef701b = L.AwesomeMarkers.icon({
+                    icon: 'fa-industry',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ae4b9a2cf3974ef08334ede32824564f.setIcon(icon_977c8718047d4b73ba3e6566c8ef701b);
+            
+    
+            var popup_3053182c79724f89bc9e4abca4a01f11 = L.popup({maxWidth: '300'});
+
+            
+                var html_53a09bce61734eca8f244434b3d78ea3 = $('<div id="html_53a09bce61734eca8f244434b3d78ea3" style="width: 100.0%; height: 100.0%;">Tesoro Golden Eagle Refinery</div>')[0];
+                popup_3053182c79724f89bc9e4abca4a01f11.setContent(html_53a09bce61734eca8f244434b3d78ea3);
+            
+
+            marker_ae4b9a2cf3974ef08334ede32824564f.bindPopup(popup_3053182c79724f89bc9e4abca4a01f11);
+
+            
+        
+    
+
+            var marker_aa5a032666be4a8683f3747e1a79f375 = L.marker(
+                [38.0716899,-122.1392589],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_dd832a63344044fb8ceb0d65886832d4);
+            
+    
+
+                var icon_ab66b7b7082544ff9c71aa46d2d2f2e9 = L.AwesomeMarkers.icon({
+                    icon: 'fa-industry',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_aa5a032666be4a8683f3747e1a79f375.setIcon(icon_ab66b7b7082544ff9c71aa46d2d2f2e9);
+            
+    
+            var popup_8c2906cea5494086a96546e6585ac154 = L.popup({maxWidth: '300'});
+
+            
+                var html_1e739d9f51bd4c55ad699ae110ae52bb = $('<div id="html_1e739d9f51bd4c55ad699ae110ae52bb" style="width: 100.0%; height: 100.0%;">Valero Benicia Refinery</div>')[0];
+                popup_8c2906cea5494086a96546e6585ac154.setContent(html_1e739d9f51bd4c55ad699ae110ae52bb);
+            
+
+            marker_aa5a032666be4a8683f3747e1a79f375.bindPopup(popup_8c2906cea5494086a96546e6585ac154);
+
+            
+        
+    
+
+            var marker_6c378439a82648dd9e784ef4b36e0bb7 = L.marker(
+                [38.013113,-122.1057677],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_dd832a63344044fb8ceb0d65886832d4);
+            
+    
+
+                var icon_295fc645a5a94131aa3d408d027d8f2a = L.AwesomeMarkers.icon({
+                    icon: 'fa-industry',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6c378439a82648dd9e784ef4b36e0bb7.setIcon(icon_295fc645a5a94131aa3d408d027d8f2a);
+            
+    
+            var popup_758d6386b11540cebe2b8f773f05d0d6 = L.popup({maxWidth: '300'});
+
+            
+                var html_e640f38de34a4f4197099a8921b2e13d = $('<div id="html_e640f38de34a4f4197099a8921b2e13d" style="width: 100.0%; height: 100.0%;">Shell Martinez Refinery</div>')[0];
+                popup_758d6386b11540cebe2b8f773f05d0d6.setContent(html_e640f38de34a4f4197099a8921b2e13d);
+            
+
+            marker_6c378439a82648dd9e784ef4b36e0bb7.bindPopup(popup_758d6386b11540cebe2b8f773f05d0d6);
+
+            
+        
+    
+
+            var marker_e149d420580c430ba291c4b236d2ba0d = L.marker(
+                [38.0039614,-122.0527881],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_dd832a63344044fb8ceb0d65886832d4);
+            
+    
+
+                var icon_4a7a2f508c7448febc296281c1fabd3b = L.AwesomeMarkers.icon({
+                    icon: 'fa-industry',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e149d420580c430ba291c4b236d2ba0d.setIcon(icon_4a7a2f508c7448febc296281c1fabd3b);
+            
+    
+            var popup_0bdda9c9d14142abac2494d9f125335b = L.popup({maxWidth: '300'});
+
+            
+                var html_9ef20e310ca844879d299f515ac8bf7b = $('<div id="html_9ef20e310ca844879d299f515ac8bf7b" style="width: 100.0%; height: 100.0%;">Tesoro Golden Eagle</div>')[0];
+                popup_0bdda9c9d14142abac2494d9f125335b.setContent(html_9ef20e310ca844879d299f515ac8bf7b);
+            
+
+            marker_e149d420580c430ba291c4b236d2ba0d.bindPopup(popup_0bdda9c9d14142abac2494d9f125335b);
+
+            
+        
+    
+
+            var marker_089bc5a444374359853719f48809ac0f = L.marker(
+                [38.04826549999999,-122.2480072],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_dd832a63344044fb8ceb0d65886832d4);
+            
+    
+
+                var icon_faa7af7df726439f8436273cfd9ec33a = L.AwesomeMarkers.icon({
+                    icon: 'fa-industry',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_089bc5a444374359853719f48809ac0f.setIcon(icon_faa7af7df726439f8436273cfd9ec33a);
+            
+    
+            var popup_d4591721835743a59fdee4b4fb7ebe71 = L.popup({maxWidth: '300'});
+
+            
+                var html_93b458dfba3c41afbb9ba0597768c118 = $('<div id="html_93b458dfba3c41afbb9ba0597768c118" style="width: 100.0%; height: 100.0%;">NuStar Energy</div>')[0];
+                popup_d4591721835743a59fdee4b4fb7ebe71.setContent(html_93b458dfba3c41afbb9ba0597768c118);
+            
+
+            marker_089bc5a444374359853719f48809ac0f.bindPopup(popup_d4591721835743a59fdee4b4fb7ebe71);
+
+            
+        
+    
+
+            var marker_911c1b521ae54a62a99f01a5c2e279a5 = L.marker(
+                [37.9172723,-122.3690711],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_dd832a63344044fb8ceb0d65886832d4);
+            
+    
+
+                var icon_6244a4ddf86e40cab78722de1bd5f33e = L.AwesomeMarkers.icon({
+                    icon: 'fa-industry',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_911c1b521ae54a62a99f01a5c2e279a5.setIcon(icon_6244a4ddf86e40cab78722de1bd5f33e);
+            
+    
+            var popup_0fe1812385f544258531caa66d93fdc2 = L.popup({maxWidth: '300'});
+
+            
+                var html_31ca010134094f7db412f8e6032b6297 = $('<div id="html_31ca010134094f7db412f8e6032b6297" style="width: 100.0%; height: 100.0%;">Kinder Morgan Inc</div>')[0];
+                popup_0fe1812385f544258531caa66d93fdc2.setContent(html_31ca010134094f7db412f8e6032b6297);
+            
+
+            marker_911c1b521ae54a62a99f01a5c2e279a5.bindPopup(popup_0fe1812385f544258531caa66d93fdc2);
+
+            
+        
+    
+
+            var marker_0393588c8bf5489faf94afa6b3c6a55d = L.marker(
+                [38.0030956,-122.0570185],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_dd832a63344044fb8ceb0d65886832d4);
+            
+    
+
+                var icon_a273681cd2bb45d5935919a9bb73a114 = L.AwesomeMarkers.icon({
+                    icon: 'fa-industry',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0393588c8bf5489faf94afa6b3c6a55d.setIcon(icon_a273681cd2bb45d5935919a9bb73a114);
+            
+    
+            var popup_9d76ea61360d4f59834259514692cf65 = L.popup({maxWidth: '300'});
+
+            
+                var html_3cda9137eb8845ee9769cd55d0152ac6 = $('<div id="html_3cda9137eb8845ee9769cd55d0152ac6" style="width: 100.0%; height: 100.0%;">Kinder Morgan Concord Pumping Station</div>')[0];
+                popup_9d76ea61360d4f59834259514692cf65.setContent(html_3cda9137eb8845ee9769cd55d0152ac6);
+            
+
+            marker_0393588c8bf5489faf94afa6b3c6a55d.bindPopup(popup_9d76ea61360d4f59834259514692cf65);
+
+            
+        
+    
+
+            var marker_6999b6ec9822451dad1e3608ef1da8ed = L.marker(
+                [37.9250973,-122.3689474],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_dd832a63344044fb8ceb0d65886832d4);
+            
+    
+
+                var icon_91880a35bbaf4de185aecbacf8a98356 = L.AwesomeMarkers.icon({
+                    icon: 'fa-industry',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6999b6ec9822451dad1e3608ef1da8ed.setIcon(icon_91880a35bbaf4de185aecbacf8a98356);
+            
+    
+            var popup_ad0d091318c942a9840bdd89522d2e95 = L.popup({maxWidth: '300'});
+
+            
+                var html_38beed9bdb89468a915254d79be57135 = $('<div id="html_38beed9bdb89468a915254d79be57135" style="width: 100.0%; height: 100.0%;">International-Matex Tank</div>')[0];
+                popup_ad0d091318c942a9840bdd89522d2e95.setContent(html_38beed9bdb89468a915254d79be57135);
+            
+
+            marker_6999b6ec9822451dad1e3608ef1da8ed.bindPopup(popup_ad0d091318c942a9840bdd89522d2e95);
+
+            
+        
+    
+
+            var marker_49753f945af9472e87a167733e6ba499 = L.marker(
+                [37.92111240000001,-122.3647173],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_dd832a63344044fb8ceb0d65886832d4);
+            
+    
+
+                var icon_b36188449c21497aafc8c0099cdb3af9 = L.AwesomeMarkers.icon({
+                    icon: 'fa-industry',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_49753f945af9472e87a167733e6ba499.setIcon(icon_b36188449c21497aafc8c0099cdb3af9);
+            
+    
+            var popup_a58bdb72185843d19190275930913707 = L.popup({maxWidth: '300'});
+
+            
+                var html_185947656c624dc9baae419aad719a22 = $('<div id="html_185947656c624dc9baae419aad719a22" style="width: 100.0%; height: 100.0%;">Plains All American Pipeline</div>')[0];
+                popup_a58bdb72185843d19190275930913707.setContent(html_185947656c624dc9baae419aad719a22);
+            
+
+            marker_49753f945af9472e87a167733e6ba499.bindPopup(popup_a58bdb72185843d19190275930913707);
+
+            
+        
+    
+
+            var marker_22a9dbb081384787901f8fc520641e43 = L.marker(
+                [38.02952,-122.103226],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_dd832a63344044fb8ceb0d65886832d4);
+            
+    
+
+                var icon_d4b9277b03ac4ff1ae507372584ac98b = L.AwesomeMarkers.icon({
+                    icon: 'fa-industry',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_22a9dbb081384787901f8fc520641e43.setIcon(icon_d4b9277b03ac4ff1ae507372584ac98b);
+            
+    
+            var popup_aeb58b0e5c504d39bd36e6060f75bba3 = L.popup({maxWidth: '300'});
+
+            
+                var html_f19ce8abe4ef457383c5adf9a7e10b17 = $('<div id="html_f19ce8abe4ef457383c5adf9a7e10b17" style="width: 100.0%; height: 100.0%;">Plains Products Terminals LLC</div>')[0];
+                popup_aeb58b0e5c504d39bd36e6060f75bba3.setContent(html_f19ce8abe4ef457383c5adf9a7e10b17);
+            
+
+            marker_22a9dbb081384787901f8fc520641e43.bindPopup(popup_aeb58b0e5c504d39bd36e6060f75bba3);
+
+            
+        
+    
+
+            var marker_8ebe986c8e7242b6bdac126c28d01015 = L.marker(
+                [38.0161306,-122.2365718],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_dd832a63344044fb8ceb0d65886832d4);
+            
+    
+
+                var icon_5d904fb687c54a05b2f91b6d0aa03886 = L.AwesomeMarkers.icon({
+                    icon: 'fa-industry',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'fa',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8ebe986c8e7242b6bdac126c28d01015.setIcon(icon_5d904fb687c54a05b2f91b6d0aa03886);
+            
+    
+            var popup_508f5d227abf4c189ae4f1e05c4601b2 = L.popup({maxWidth: '300'});
+
+            
+                var html_da0682ebc0a9453cb568083ddb7d0b37 = $('<div id="html_da0682ebc0a9453cb568083ddb7d0b37" style="width: 100.0%; height: 100.0%;">Phillips 66 Carbon Plant</div>')[0];
+                popup_508f5d227abf4c189ae4f1e05c4601b2.setContent(html_da0682ebc0a9453cb568083ddb7d0b37);
+            
+
+            marker_8ebe986c8e7242b6bdac126c28d01015.bindPopup(popup_508f5d227abf4c189ae4f1e05c4601b2);
+
+            
+        
+</script>
